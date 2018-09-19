@@ -1,0 +1,33 @@
+import java.util.*;
+import java.io.*;
+public class fraction
+{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int den = sc.nextInt();
+        int wholeAns;
+        int denAns;
+        int numAns;
+        if ( num == 0){
+            System.out.println(0);
+        }
+        else if (num%den==0){
+           System.out.println(num/den); 
+        }
+        else{
+            wholeAns = num/den;
+            numAns = num - (wholeAns*den);
+            denAns=den;
+            if(denAns%numAns==0){
+                
+            }
+            if (wholeAns == 0){
+                System.out.println(numAns+"/"+denAns);
+            }
+            else{
+                System.out.println(wholeAns + " " +numAns+"/"+denAns);
+            }
+        }
+    }
+}
